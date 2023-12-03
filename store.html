@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/store.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+  <style>
+    .package-section {
+      position: relative;
+      width: 340px; /* Set the width of the border */
+      height: 440px; /* Set the height of the border */
+      display: inline-block; /* Display sections side by side */
+      margin-right: 20px; /* Add some margin between sections */
+      border: 2px solid #008000; /* Green border color */
+      background-color: #008000; /* Green background color for the border */
+      color: #fff; /* Text color for the title and description */
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    .package-section .title {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .package-section .description {
+      padding: 25px; /* Add padding for the description */
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      text-align: justify; /* Justify the text within the description */
+      width: 21vw;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="img/logo_white.png" alt="Dardania RP Logo">
+    </div>
+
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')">Start</li>
+    <li class="menuitem" onclick="openLink('about')">About</li>
+    <li class="menuitem" onclick="openLink('rules')">Rules</li>
+    <li class="menuitem" onclick="openLink('whitelist')">Whitelist</li>
+    <li class="menuitem" onclick="openLink('contact')">Contact</li>
+    <li class="menuitem" onclick="openLink('partner')">Partner</li>
+    <li class="menuitem" onclick="openLink('store')" style="border-color: #3ca918">Store</li>
+</ul>
+
+<div class="maintext">
+    <div class="package-section">
+        <div class="title">Paketat VIP</div>
+        <div class='description'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper turpis vitae mi tincidunt, id dictum justo aliquam. Integer tristique, lacus nec hendrerit sollicitudin, libero augue pellentesque nunc, ac varius velit leo nec lorem. Proin varius bibendum eros, vel cursus ligula accumsan ut. Duis scelerisque nunc in quam congue, in tincidunt mauris sodales.</p>
+            <div class="button1" onclick="redirect()">Kontakto</div>
+            <script>
+                function redirect() {
+                    window.location.href = 'https://discord.gg/NDfmCy3Hx8';
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="package-section">
+        <div class="title">Paketa Diamond</div>
+        <div class='description'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper turpis vitae mi tincidunt, id dictum justo aliquam. Integer tristique, lacus nec hendrerit sollicitudin, libero augue pellentesque nunc, ac varius velit leo nec lorem. Proin varius bibendum eros, vel cursus ligula accumsan ut. Duis scelerisque nunc in quam congue, in tincidunt mauris sodales.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
